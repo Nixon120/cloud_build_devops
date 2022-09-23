@@ -56,11 +56,11 @@ jobs:
     # Build the Docker image
     - name: Build
       run: |-
-        docker build -t "gcr.io/${{ secrets.GCP_PROJECT_ID }}/test:latest" .
+        docker build -t "gcr.io/beaming-force-358817/test:latest" .
  
         
     # Push the Docker image to Google Artifact Registry
     - name: Publish
       run: |
-        docker push gcr.io/${{ secrets.GCP_PROJECT_ID }}/test:latest 
+        docker push gcr.io/beaming-force-358817/test:latest 
     
