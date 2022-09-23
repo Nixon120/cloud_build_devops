@@ -26,7 +26,7 @@ app.get('/', async (req, res) => {
   logger.info({logField: 'custom-entry', arbitraryField: 'custom-entry'}); // Example of structured logging
   // Use request-based logger with log correlation
   req.log.info('Child logger with trace Id.'); // https://cloud.google.com/run/docs/logging#correlate-logs
-  res.send('Hello World Nixon Lauture120 got Big coronans!');
+  res.send('Hello World My Name is Nixon Lauture and I'm finally a Billionair With A B!');
 });
 
 module.exports = app;
